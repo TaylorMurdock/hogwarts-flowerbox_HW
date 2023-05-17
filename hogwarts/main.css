@@ -1,29 +1,48 @@
+/* Sets the background color, text alignment, font family, and text color for the body */
 body {
   background-color: hsl(52, 85%, 39%);
-  text-align: center;
+  text-align: center; /* Centers the text within the body */
+  font-family: Arial, sans-serif; /* Sets the font family for the text */
+  color: white; /* Sets the text color to white */
 }
 
+/* Applies fantasy font family, font size, and underline style to elements with the class "pet" */
 .pet {
-  font-family: fantasy;
+  font-family: fantasy; /* Sets the font family to a fantasy style */
+  font-size: 20px; /* Sets the font size to 20 pixels */
+  text-decoration: underline; /* Underlines the text */
 }
 
+/* Reduces the opacity of elements with the class "secret" to 0.7 (partially transparent) */
 .secret {
-  opacity: 0.5;
+  opacity: 0.7; /* Sets the opacity to 0.7 */
 }
 
+/* Adds padding, background color, and removes the default list style to unordered lists with attribute "storage" set to "trunk" */
 ul[storage="trunk"] {
-  list-style: none;
+  list-style: none; /* Removes the default list style */
+  padding: 10px; /* Adds 10 pixels of padding around the unordered list */
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
+/* Adds border, collapses cell borders, sets width and center alignment for tables */
 table {
-  border: 1px solid gray;
-  margin: 0 auto;
+  border: 1px solid gray; /* Adds a 1-pixel gray border around the table */
+  border-collapse: collapse; /* Collapses the cell borders to create a seamless appearance */
+  width: 80%; /* Sets the table width to 80% of its container */
+  margin: 20px auto; /* Centers the table horizontally by setting left and right margins to auto */
 }
 
+/* Adds border, padding, and center alignment for table header and data cells */
 th,
 td {
-  border: 1px solid gray;
+  border: 1px solid gray; /* Adds a 1-pixel gray border around the table cells */
+  padding: 10px; /* Adds 10 pixels of padding within the cells */
+  text-align: center; /* Centers the content within the cells */
 }
+
+/* Applies chartreuse color and bold font weight to elements with the class "cabbage" */
 .cabbage {
-  color: CHARTREUSE;
+  color: chartreuse; /* Sets the text color to chartreuse */
+  font-weight: bold; /* Sets the font weight to bold */
 }
