@@ -2,3 +2,7 @@ body {
   background-color: hsl(52, 85%, 39%);
   text-align: center;
 }
+
+.pet {
+  font-family: fantasy;
+}
