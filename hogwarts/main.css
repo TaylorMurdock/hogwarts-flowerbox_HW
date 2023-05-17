@@ -11,6 +11,16 @@ body {
   opacity: 0.5;
 }
 
-ul {
-  list-style-type: none;
+ul[storage="trunk"] {
+  list-style: none;
+}
+
+table {
+  border: 1px solid gray;
+  margin: 0 auto;
+}
+
+th,
+td {
+  border: 1px solid gray;
 }
