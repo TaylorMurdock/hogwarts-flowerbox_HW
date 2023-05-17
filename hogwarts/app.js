@@ -31,17 +31,17 @@ $(() => {
   $ul.append($li1, $li2, $li3, $li4, $li5, $li6);
   $container.append($ul);
 
-  const $h5 = $("<h5>").text("Spring 2017"); // Add an h5 element with the text "Spring 2017"
-  $container.prepend($h5); // Add it above the table
+  const $h5 = $("<h5>").text("Spring 2017");
+  $container.prepend($h5);
 
-  const $table = $("<table>"); // Create the table element
-  const $thead = $("<thead>"); // Create the thead element
+  const $table = $("<table>");
+  const $thead = $("<thead>");
 
-  const $th1 = $("<th>").text("Day"); // Create the first th element with the text "Day"
-  const $th2 = $("<th>").text("Classes"); // Create the second th element with the text "Classes"
+  const $th1 = $("<th>").text("Day");
+  const $th2 = $("<th>").text("Classes");
 
-  $thead.append($th1, $th2); // Append th elements to the thead element
-  $table.append($thead); // Append thead element to the table element
+  $thead.append($th1, $th2);
+  $table.append($thead);
 
   const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
   const classes = [
@@ -56,13 +56,34 @@ $(() => {
   ];
 
   for (let i = 0; i < days.length; i++) {
-    const $tr = $("<tr>"); // Create a tr element for each day
-    const $td1 = $("<td>").text(days[i]); // Create the td element for the day
-    const $td2 = $("<td>").text(classes[i]); // Create the td element for the classes
+    const $tr = $("<tr>");
+    const $td1 = $("<td>").text(days[i]);
+    const $td2 = $("<td>").text(classes[i]);
 
-    $tr.append($td1, $td2); // Append td elements to the tr element
-    $table.append($tr); // Append tr element to the table element
+    $tr.append($td1, $td2);
+    $table.append($tr);
   }
 
-  $container.append($table); // Append the table to the container div
+  $container.append($table);
+
+  $h4Wand.remove();
+
+  $li1.remove();
+
+  const $newWand = $("<h4>")
+    .text("Phoenix Feather Wand")
+    .css("color", "indigo");
+  $h4Pet.after($newWand);
+
+  $h4Pet.detach();
+  $ul.append($li5);
+
+  $ul.children(".pet").detach();
+  $container.append($h4Pet);
+
+  $(".secret").hide("slow").delay(2000).show("slow");
+
+  $(".pet.toad .leash").addClass("cabbage");
+
+  $(".pet.toad .leash").removeClass("cabbage");
 });
