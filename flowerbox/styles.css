@@ -3,6 +3,8 @@ body {
     padding: 20px 50px 20px 50px;
     font-family: 'Open Sans', sans-serif;
     background-color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 ul {
@@ -17,9 +19,9 @@ ul {
 
 .navigation-box {
     background-color: #92b2ba;
-    padding: 10px;
     margin-bottom: 20px;
-    width: 68.7%;
+    margin-left: 70px;
+    margin-right: 140px;
 }
 
 .navigation-list {
@@ -42,15 +44,17 @@ ul {
 
 .banner-image {
     position: relative;
-    width: 84.3%;
     display: block;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: 70px;
+    width: 93.99%;
 }
 
 .banner-heading {
     position: absolute;
-    top: 50px;
-    right: 150px;
+    top: 100px;
+    right: 400px;
     color: #92b2ba;
     font-size: 50px;
     font-weight: bold;
@@ -60,8 +64,8 @@ ul {
 
 .banner-subheading {
     position: absolute;
-    top: 140px;
-    right: 150px;
+    top: 200px;
+    right: 405px;
     color: #f0a8bb;
     font-size: 14px;
     font-weight: bold;
@@ -76,17 +80,23 @@ ul {
     justify-content: space-between;
     margin-bottom: 20px;
     padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .flower-container {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .flower-image {
-    width: 200px;
-    height: 200px;
+    width: 421px;
+    height: 300px;
     object-fit: cover;
-    margin-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 25px;
 }
 
 .flower-details {
@@ -97,8 +107,8 @@ ul {
     justify-content: space-between;
     flex-direction: row;
     padding: 0;
-    width: 200px;
-    margin-right: 20px;
+    width: 421px;
+    margin-right: 10px;
     margin-bottom: 5px;
     margin-top: -5px;
 }
@@ -121,20 +131,26 @@ ul {
 .image-row2,
 .image-row3 {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .image-row1 .flower-image:not(:last-child),
 .image-row2 .flower-image:not(:last-child),
 .image-row3 .flower-image:not(:last-child) {
     margin-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .info-box {
     background-color: #eeeeee;
-    padding: 20px;
-    width: 66.3%;
+    margin-left: auto;
+    margin-right: 134px;
+    width: 88.7%;
+
 }
 
 .info-box ul {
